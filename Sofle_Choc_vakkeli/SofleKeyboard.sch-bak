@@ -1932,6 +1932,17 @@ F 3 "" H 10050 3550 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
+L SofleKeyboard:SW_PUSH_LED SW32
+U 1 1 61EE1AA3
+P 10050 4200
+F 0 "SW32" H 10050 4350 50  0000 C CNN
+F 1 "SW_PUSH_LED" H 10050 4100 50  0001 C CNN
+F 2 "SofleChoc:Choc_Hotswap_SK6812MiniE" H 10050 4200 50  0001 C CNN
+F 3 "" H 10050 4200 50  0000 C CNN
+	1    10050 4200
+	1    0    0    -1  
+$EndComp
+$Comp
 L SofleKeyboard:SW_PUSH_LED SW33
 U 1 1 61EE1AAF
 P 10050 4850
@@ -2135,37 +2146,4 @@ F 3 "" H 5975 2925 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	5775 2575 5775 2450
-$Comp
-L SofleKeyboard:SW_PUSH_LED SW32
-U 1 1 61EE1AA3
-P 10050 4200
-F 0 "SW32" H 10050 4350 50  0000 C CNN
-F 1 "SW_PUSH_LED" H 10050 4100 50  0001 C CNN
-F 2 "SofleChoc:Choc_Hotswap_SK6812MiniE" H 10050 4200 50  0001 C CNN
-F 3 "" H 10050 4200 50  0000 C CNN
-	1    10050 4200
-	1    0    0    -1  
-$EndComp
-$Comp
-L SofleKeyboard-rescue:HOLE-Lily58-cache-Lily58_Pro-rescue STAB1
-U 1 1 61E8A613
-P 950 6450
-F 0 "STAB1" H 950 6450 60  0000 C CNN
-F 1 "STAB" H 950 6350 60  0000 C CNN
-F 2 "SofleChoc:Kailh-PG1350-2u-stab" H 950 6450 60  0001 C CNN
-F 3 "" H 950 6450 60  0000 C CNN
-	1    950  6450
-	1    0    0    -1  
-$EndComp
-$Comp
-L SofleKeyboard-rescue:HOLE-Lily58-cache-Lily58_Pro-rescue STAB2
-U 1 1 61E99030
-P 950 6900
-F 0 "STAB2" H 950 6900 60  0000 C CNN
-F 1 "STAB" H 950 6800 60  0000 C CNN
-F 2 "SofleChoc:Kailh-PG1350-2u-stab" H 950 6900 60  0001 C CNN
-F 3 "" H 950 6900 60  0000 C CNN
-	1    950  6900
-	1    0    0    -1  
-$EndComp
 $EndSCHEMATC
