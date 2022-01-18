@@ -1,6 +1,9 @@
-# Sofle Keyboard
+# Sofle Keyboard Vakkeli fork
 
-![SofleKeyboard](docs/images/sofle_keyboard.jpg)
+Own version off the great keyboard. Added 7th column to better support ISO and Nordic layout. Will be updating this readme. PCB is in prototype production at this point. Hopefully adding 3D printed plates, case and models for them.
+
+
+# Original Sofle Keyboard
 
 Sofle is 6×4+5 keys column-staggered split keyboard with encoder support. Based on [Lily58](https://github.com/kata0510/Lily58), [Corne](https://github.com/foostan/crkbd) and [Helix](https://github.com/MakotoKurauchi/helix) keyboards.
 
@@ -10,11 +13,11 @@ SofleKeyboard was created by [Josef Adamcik](https://josef-adamcik.cz/). The mot
 
 Sofle RGB was contributed by [Dane Evans](https://github.com/DaneEvans).
 
-## Firmware 
+## Firmware
 
 Sofle uses [QMK firmware](https://qmk.fm/)
 
-## Default layout 
+## Default layout
 
 ![Default layout for SofleKeyboard](Images/soflekeyboard.png)
 
