@@ -276,10 +276,6 @@ Text GLabel 1400 4350 2    50   Input ~ 0
 SCL
 Text GLabel 1400 4250 2    50   Input ~ 0
 SDA
-Text GLabel 1400 4000 2    50   Input ~ 0
-SCL
-Text GLabel 1400 4100 2    50   Input ~ 0
-SDA
 Wire Wire Line
 	2400 950  2700 950 
 Wire Wire Line
@@ -1505,28 +1501,6 @@ F 3 "~" H 1300 4550 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L SofleKeyboard-rescue:GND-power #PWR03
-U 1 1 5B9205B8
-P 1400 3800
-F 0 "#PWR03" H 1400 3550 50  0001 C CNN
-F 1 "GND" V 1405 3672 50  0000 R CNN
-F 2 "" H 1400 3800 50  0001 C CNN
-F 3 "" H 1400 3800 50  0001 C CNN
-	1    1400 3800
-	0    -1   -1   0   
-$EndComp
-$Comp
-L SofleKeyboard-rescue:VCC-power #PWR09
-U 1 1 5B9207DA
-P 1400 3900
-F 0 "#PWR09" H 1400 3750 50  0001 C CNN
-F 1 "VCC" V 1417 4028 50  0000 L CNN
-F 2 "" H 1400 3900 50  0001 C CNN
-F 3 "" H 1400 3900 50  0001 C CNN
-	1    1400 3900
-	0    1    1    0   
-$EndComp
-$Comp
 L SofleKeyboard-rescue:GND-power #PWR014
 U 1 1 5B920A11
 P 1400 4550
@@ -2168,4 +2142,191 @@ F 3 "" H 950 6900 60  0000 C CNN
 	1    950  6900
 	1    0    0    -1  
 $EndComp
+$Comp
+L SofleKeyboard-rescue:VCC-power #PWR09
+U 1 1 5B9207DA
+P 1400 3900
+F 0 "#PWR09" H 1400 3750 50  0001 C CNN
+F 1 "VCC" V 1417 4028 50  0000 L CNN
+F 2 "" H 1400 3900 50  0001 C CNN
+F 3 "" H 1400 3900 50  0001 C CNN
+	1    1400 3900
+	0    1    1    0   
+$EndComp
+$Comp
+L SofleKeyboard-rescue:GND-power #PWR03
+U 1 1 5B9205B8
+P 1400 3800
+F 0 "#PWR03" H 1400 3550 50  0001 C CNN
+F 1 "GND" V 1405 3672 50  0000 R CNN
+F 2 "" H 1400 3800 50  0001 C CNN
+F 3 "" H 1400 3800 50  0001 C CNN
+	1    1400 3800
+	0    -1   -1   0   
+$EndComp
+Text GLabel 1400 4100 2    50   Input ~ 0
+SDA
+Text GLabel 1400 4000 2    50   Input ~ 0
+SCL
+$Comp
+L SofleKeyboard:PimorioniTrackball J1
+U 1 1 6218CA31
+P 3200 4650
+F 0 "J1" H 3828 4696 50  0000 L CNN
+F 1 "PimorioniTrackball" H 3828 4605 50  0000 L CNN
+F 2 "Keebio-Parts:pimoroni_trackball" H 3150 5150 50  0001 C CNN
+F 3 "~" H 3200 4650 50  0001 C CNN
+	1    3200 4650
+	1    0    0    -1  
+$EndComp
+Text GLabel 2450 4650 0    50   Input ~ 0
+SCL
+$Comp
+L SofleKeyboard-rescue:Jumper_NO_Small-Device JP15
+U 1 1 6218CA67
+P 2750 4750
+F 0 "JP15" H 2750 4700 50  0000 C CNN
+F 1 "Jumper_NO_Small" H 2750 4844 50  0001 C CNN
+F 2 "SofleKeyboard-footprint:Jumper" H 2750 4750 50  0001 C CNN
+F 3 "~" H 2750 4750 50  0001 C CNN
+	1    2750 4750
+	1    0    0    -1  
+$EndComp
+Text GLabel 2500 4750 0    50   Input ~ 0
+SDA
+Wire Wire Line
+	2500 4750 2650 4750
+Wire Wire Line
+	2800 4850 3000 4850
+Wire Wire Line
+	2850 4750 3000 4750
+Wire Wire Line
+	2800 4550 3000 4550
+Wire Wire Line
+	3000 4650 2450 4650
+Wire Wire Line
+	2750 5150 2900 5150
+Wire Wire Line
+	2900 4450 3000 4450
+Wire Wire Line
+	2800 4450 2900 4450
+Connection ~ 2900 4450
+Wire Wire Line
+	2900 5150 2900 4450
+$Comp
+L SofleKeyboard-rescue:Jumper_NO_Small-Device JP13
+U 1 1 6218CA55
+P 2650 5150
+F 0 "JP13" H 2650 5100 50  0000 C CNN
+F 1 "Jumper_NO_Small" H 2650 5244 50  0001 C CNN
+F 2 "SofleKeyboard-footprint:Jumper" H 2650 5150 50  0001 C CNN
+F 3 "~" H 2650 5150 50  0001 C CNN
+	1    2650 5150
+	1    0    0    -1  
+$EndComp
+$Comp
+L SofleKeyboard-rescue:GND-power #PWR0107
+U 1 1 6218CA75
+P 2400 5150
+F 0 "#PWR0107" H 2400 4900 50  0001 C CNN
+F 1 "GND" V 2405 5022 50  0000 R CNN
+F 2 "" H 2400 5150 50  0001 C CNN
+F 3 "" H 2400 5150 50  0001 C CNN
+	1    2400 5150
+	0    1    1    0   
+$EndComp
+$Comp
+L SofleKeyboard-rescue:VCC-power #PWR0108
+U 1 1 6218CA7B
+P 2450 5450
+F 0 "#PWR0108" H 2450 5300 50  0001 C CNN
+F 1 "VCC" V 2467 5578 50  0000 L CNN
+F 2 "" H 2450 5450 50  0001 C CNN
+F 3 "" H 2450 5450 50  0001 C CNN
+	1    2450 5450
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	2400 5150 2550 5150
+Wire Wire Line
+	2450 5450 2600 5450
+$Comp
+L SofleKeyboard-rescue:Jumper_NO_Small-Device JP16
+U 1 1 6218CA6D
+P 2700 5450
+F 0 "JP16" H 2700 5400 50  0000 C CNN
+F 1 "Jumper_NO_Small" H 2700 5544 50  0001 C CNN
+F 2 "SofleKeyboard-footprint:Jumper" H 2700 5450 50  0001 C CNN
+F 3 "~" H 2700 5450 50  0001 C CNN
+	1    2700 5450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2800 5450 3000 5450
+Connection ~ 3000 4850
+Wire Wire Line
+	3000 5450 3000 4850
+$Comp
+L SofleKeyboard-rescue:Jumper_NO_Small-Device JP12
+U 1 1 6218CA4F
+P 2700 4850
+F 0 "JP12" H 2700 4800 50  0000 C CNN
+F 1 "Jumper_NO_Small" H 2700 4944 50  0001 C CNN
+F 2 "SofleKeyboard-footprint:Jumper" H 2700 4850 50  0001 C CNN
+F 3 "~" H 2700 4850 50  0001 C CNN
+	1    2700 4850
+	1    0    0    -1  
+$EndComp
+$Comp
+L SofleKeyboard-rescue:GND-power #PWR0105
+U 1 1 6218CA25
+P 2450 4850
+F 0 "#PWR0105" H 2450 4600 50  0001 C CNN
+F 1 "GND" V 2455 4722 50  0000 R CNN
+F 2 "" H 2450 4850 50  0001 C CNN
+F 3 "" H 2450 4850 50  0001 C CNN
+	1    2450 4850
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	2450 4850 2600 4850
+Text GLabel 2450 4550 0    50   Input ~ 0
+SDA
+$Comp
+L SofleKeyboard-rescue:Jumper_NO_Small-Device JP10
+U 1 1 6218CA3D
+P 2700 4550
+F 0 "JP10" H 2700 4500 50  0000 C CNN
+F 1 "Jumper_NO_Small" H 2700 4644 50  0001 C CNN
+F 2 "SofleKeyboard-footprint:Jumper" H 2700 4550 50  0001 C CNN
+F 3 "~" H 2700 4550 50  0001 C CNN
+	1    2700 4550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2450 4550 2600 4550
+$Comp
+L SofleKeyboard-rescue:VCC-power #PWR0106
+U 1 1 6218CA2B
+P 2450 4450
+F 0 "#PWR0106" H 2450 4300 50  0001 C CNN
+F 1 "VCC" V 2467 4578 50  0000 L CNN
+F 2 "" H 2450 4450 50  0001 C CNN
+F 3 "" H 2450 4450 50  0001 C CNN
+	1    2450 4450
+	0    -1   -1   0   
+$EndComp
+$Comp
+L SofleKeyboard-rescue:Jumper_NO_Small-Device JP9
+U 1 1 6218CA37
+P 2700 4450
+F 0 "JP9" H 2700 4400 50  0000 C CNN
+F 1 "Jumper_NO_Small" H 2700 4544 50  0001 C CNN
+F 2 "SofleKeyboard-footprint:Jumper" H 2700 4450 50  0001 C CNN
+F 3 "~" H 2700 4450 50  0001 C CNN
+	1    2700 4450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2450 4450 2600 4450
 $EndSCHEMATC
